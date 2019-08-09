@@ -1,0 +1,15 @@
+---
+
+- name: copy file if changed
+  hosts: asterisk                                                                                                      
+  become: true                                                                                                          
+                                                                                                                        
+  tasks:                                                                                                                
+    - name: Change file ownership, group and permissions                     
+      copy:                                                                                                             
+        src: {{sipsrc}}                                                                                             
+        dest: {{sipdst}}                                                                                        
+        owner: asterisk                                                                                                       
+        group: asterisk                                                                                                       
+        mode: '0644'
+  notify: restart asterisk 

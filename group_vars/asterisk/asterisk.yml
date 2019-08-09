@@ -1,0 +1,6 @@
+---
+ansible_ssh_user: sysadmin
+ansible_ssh_pass: kfvth20cdn
+sipsrc: /etc/ansible/roles/asterisk/files/1.txt
+sipdst: /etc/asterisk/1.txt
+

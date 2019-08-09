@@ -1,0 +1,7 @@
+---
+  - name: "Play Asterisk"
+    hosts: local
+    become: True
+    roles:
+        - apache2
+        - apache2_cpconfig

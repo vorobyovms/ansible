@@ -1,0 +1,12 @@
+---
+- name: Install Asterisk
+  apt: name=asterisk
+       state=present
+  tags:
+     - install
+
+  tags:
+     - copy
+
+  become: True
+  notify: restart

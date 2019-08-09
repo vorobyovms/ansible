@@ -1,0 +1,6 @@
+---
+ansible_ssh_user: sysadmin
+ansible_ssh_pass: kfvth20cdn
+apachesrc: /etc/ansible/roles/apache2/files/apache2.conf
+apachedst: /etc/apache2/apache2.conf
+

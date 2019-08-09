@@ -1,0 +1,12 @@
+---
+- name: copy files apache2
+  
+  copy:
+       src: "{{ apachesrc }}"
+       dest: "{{ apachedst }}"
+       owner: root
+       group: root
+       mode: '0644'
+
+  become: True
+  notify: restart apache2
