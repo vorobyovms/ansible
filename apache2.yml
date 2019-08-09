@@ -1,5 +1,5 @@
 ---
-  - name: "Play Asterisk"
+  - name: "Play Apache2"
     hosts: local
     become: True
     roles:
