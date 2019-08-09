@@ -1,6 +1,0 @@
----
-- name: restart asterisk
-  service:
-      name: asterisk
-      state: restarted
-      enabled: yes

@@ -42,12 +42,5 @@
 
 ## db-[99:101]-node.example.com
 
-[pravogarant]
-crm ansible_ssh_host=crm.pravogarant.com
-backup ansible_ssh_host=backup.pravogarant.com
-
-[asterisk]
-backup ansible_ssh_host=backup.pravogarant.com
-
 [local]
 vm ansible_ssh_host=127.0.0.1 ansible_ssh_port=2222

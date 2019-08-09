@@ -1,7 +1,0 @@
----
-  - name: "Play Asterisk"
-    hosts: asterisk
-    become: True
-    roles:
-        - asterisk
-        - asterisk_cpconfig

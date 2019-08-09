@@ -1,3 +1,0 @@
----
-ansible_ssh_user: sysadmin
-ansible_ssh_pass: kfvth20cdn

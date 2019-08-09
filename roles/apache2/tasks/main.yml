@@ -1,12 +1,8 @@
 ---
 - name: Install Apache2
-  apt: name=apache2
+  apt: name={{package_for_install}}
        state=present
-  tags:
-     - install
-
-  tags:
-     - copy
 
   become: True
   notify: apache restart
+  ignore_errors: True
