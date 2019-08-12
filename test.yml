@@ -1,0 +1,13 @@
+- hosts: local
+  name: TEST INSTALL
+  become: True    
+  tasks:
+     
+   - name: Installs1
+     apt: pkg=asterisk state=present
+
+   - name: Installs2
+     apt: pkg=python state=present
+
+   - name: Asterisk -RVVVVV
+     command: uname -a
