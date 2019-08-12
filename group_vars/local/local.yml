@@ -3,4 +3,7 @@ ansible_ssh_user: sysadmin
 ansible_ssh_pass: kfvth20cdn
 apachesrc: /etc/ansible/roles/apache2/files/apache2
 apachedst: /etc
-package_for_install: apache2,libapache2-mod-geoip,apache2-mpm-prefork,apache2-data,apache2-bin,apache2-utils
+package_for_install: apache2,libapache2-mod-geoip,apache2-data,apache2-bin,apache2-utils
+index: /etc/ansible/roles/apache2/files/apache2/conf.d/autoindex.conf
+index_dst: /etc/apache2/conf.d/autoindex.conf
+
