@@ -11,3 +11,12 @@
 
    - name: Asterisk -RVVVVV
      command: uname -a
+
+   - name: test list
+     command: "{{ item }}"
+     with_items:
+      - "uname -a\n"
+      - "df -h\n"
+      - "ls -la\n"
+     
+
